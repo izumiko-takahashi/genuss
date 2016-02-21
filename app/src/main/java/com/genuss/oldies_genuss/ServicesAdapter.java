@@ -17,11 +17,9 @@ import java.util.List;
 public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.ServicesViewFolder> {
 
         private List<ServiceInfo> serviceList;
-    private Context context;
 
-        public ServicesAdapter(List<ServiceInfo> serviceList,Context context ) {
+        public ServicesAdapter(List<ServiceInfo> serviceList ) {
             this.serviceList = serviceList;
-            this.context= context;
         }
 
         @Override
@@ -41,15 +39,6 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.Servic
             View itemView = LayoutInflater.
                     from(viewGroup.getContext()).
                     inflate(R.layout.activity_main, viewGroup, false);
-
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                   // context.startActivity(new Intent(context,Categories.class));
-                }
-            });
 
             return new ServicesViewFolder(itemView);
         }
