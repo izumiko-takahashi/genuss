@@ -11,10 +11,6 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-android{
-    compileSdkVersion 22
-    buildToolsVersion = '22.0.1'
-}
 
 allprojects {
     repositories {
