@@ -16,7 +16,7 @@ public class ServiceActivity extends Activity {
     }
     @Override void onCreateView(View view)
     {
-
+        
 
     }
 
