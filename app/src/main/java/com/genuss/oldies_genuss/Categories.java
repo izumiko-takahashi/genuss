@@ -2,6 +2,7 @@ package com.genuss.oldies_genuss;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.webkit.WebView;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -17,8 +18,8 @@ public class Categories extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        WebView mWebView = (WebView)findViewById(R.id.webView);
-        mWebView.loadUrl("http://southtruckcentral.com.mx/oldies/");
+        RecyclerView mRecyclerV = (RecyclerView)findViewById(R.id.card_view);
+
 
     }
 }
